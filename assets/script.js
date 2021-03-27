@@ -1,6 +1,7 @@
 let description = document.getElementsByClassName("description");
 let currentDay = document.getElementById("currentDay");
 let currentDate = document.getElementById("currentDate");
+let saveBtn = document.querySelector(".saveBtn");
 let curHour = moment().hour();
 let curDay = moment().format("dddd");
 let curDate = moment().format("MMM Do, YYYY");
@@ -9,6 +10,7 @@ currentDate.innerHTML = curDate;
 
 let timeArray = ["t9", "t10", "t11", "t12", "t1", "t2", "t3", "t4", "t5"];
 let colorArray = ["c9", "c10", "c11", "c12", "c1", "c2", "c3", "c4", "c5"];
+let textArray = ["b9", "b10", "b11", "b12", "b1", "b2", "b3", "b4", "b5"];
 
 for (let i = 0; i < timeArray.length; i++) {
     let colorChange = document.getElementById(colorArray[i]);
@@ -29,3 +31,12 @@ for (let i = 0; i < timeArray.length; i++) {
     }
     
 }
+
+for (let i = 0; i < array.length; i++) {
+    document.getElementById(textArray[i]).addEventListener("click", function ()
+        {
+            let schedule = document.getElementById(colorArray[i]).value ;
+            localStorage.setItem(colorArray[i], schedule) ;
+            console.log(schedule)
+        } , false);
+}    
