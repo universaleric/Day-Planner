@@ -32,11 +32,12 @@ for (let i = 0; i < timeArray.length; i++) {
     
 }
 
-for (let i = 0; i < array.length; i++) {
-    document.getElementById(textArray[i]).addEventListener("click", function ()
-        {
-            let schedule = document.getElementById(colorArray[i]).value ;
-            localStorage.setItem(colorArray[i], schedule) ;
-            console.log(schedule)
-        } , false);
-}    
+document.querySelectorAll('.btn').forEach(item => {
+    item.addEventListener('click', event => {
+      for (let i = 0; i < timeArray.length; i++) {
+              let schedule = document.getElementById(colorArray[i]).value ;
+              localStorage.setItem(colorArray[i], schedule) ;
+              console.log(schedule)
+          }    
+    })
+  }, false);
