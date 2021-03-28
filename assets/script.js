@@ -12,6 +12,12 @@ let timeArray = ["t9", "t10", "t11", "t12", "t1", "t2", "t3", "t4", "t5"];
 let colorArray = ["c9", "c10", "c11", "c12", "c1", "c2", "c3", "c4", "c5"];
 let textArray = ["b9", "b10", "b11", "b12", "b1", "b2", "b3", "b4", "b5"];
 
+// for (let i = 0; i < timeArray.length; i++) {
+    
+//     localStorage.getItem(colorArray[i]) ;
+    
+// }   
+
 for (let i = 0; i < timeArray.length; i++) {
     let colorChange = document.getElementById(colorArray[i]);
     let time = document.getElementById(timeArray[i]).dataset.time;
