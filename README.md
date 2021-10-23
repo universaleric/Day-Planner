@@ -3,6 +3,7 @@
 ### Description
 
 Day Planner
+Link to website: https://universaleric.github.io/Day-Planner/
 
 ## Table of Contents
 
