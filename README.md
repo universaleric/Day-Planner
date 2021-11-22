@@ -2,7 +2,6 @@
 
 ### Description
 
-Day Planner
 <img src="assets\Day_Planner.jpg"
      alt="Screen Shot"
      style="height: 200px;" />
