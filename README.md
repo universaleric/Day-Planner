@@ -19,7 +19,9 @@ Day Planner
 ## About This Project
 
 This project let’s a user plan out their 9-5 workday by the hour and save their work. It also color codes the hours based on the current hour.
-![Screen Shot](assets\Day_Planner.jpg)
+<img src="assets\Day_Planner.jpg"
+     alt="Screen Shot"
+     style="height: 200px;" />
 
 ### Built With
 
